@@ -4,6 +4,7 @@ public class App {
         Car carB = new Car ("Sedan", 250.00);
         Car carC = new Car ("Chevrolet", 420.50);
         Car carD = new Car ("BMW", 220.00);
+        Car carE = new Car ("Hyundai", 350.00);
 
         CarLinkedList carList = new CarLinkedList();
 
@@ -12,7 +13,7 @@ public class App {
         carList.addToFront(carC);
         carList.addToFront(carD);
 
-        carList.printList();
+        /* carList.printList();
         boolean isFound = carList.findElementByModel("SUV");
         System.out.println();
         System.out.println(isFound);
@@ -23,6 +24,12 @@ public class App {
         }
         else {
             System.out.println("Car not found in the list");
-        }
+        } */
+
+        carList.addItemToList(2, carE);
+        carList.reverseList();
+        carList.printList();
+
+        // {BMW -> Chev -> Hyndai -> Sedan -> Mustang -> null}
     }
 }

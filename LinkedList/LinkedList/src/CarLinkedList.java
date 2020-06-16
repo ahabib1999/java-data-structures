@@ -8,6 +8,38 @@ public class CarLinkedList {
         head = node; 
     }
 
+    public void addItemToList(int index, Car car) {
+        int count = 0;
+        CarNode current = head;
+        CarNode previous = null;
+        CarNode newNode = new CarNode(car);
+
+        while (current != null) {
+            if (count == index) {
+                newNode.setNext(current);
+                previous.setNext(newNode);
+            }
+            previous = current;
+            current = current.getNext();
+            count++;
+        }
+    }
+
+    public void reverseList() {
+
+        CarNode current = head;
+        CarNode previous = null;
+        CarNode next = null;
+
+        while (current != null) {
+            next = current.getNext();
+            current.setNext(previous);
+            previous = current;
+            current = next;
+        }
+        head = previous;
+    }
+
     public void printList() {
         CarNode current = head;
 
