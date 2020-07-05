@@ -18,6 +18,22 @@ public class Tree {
         }
     }
 
+    public int getMin() {
+        if (root != null) {
+            return root.getMin();
+        }
+
+        return 0;
+    }
+
+    public int getMax() {
+        if (root != null) {
+            return root.getMax();
+        }
+
+        return 0;
+    }
+
     public TreeNode get(int value) {
         if (root != null) {
             return root.get(value);

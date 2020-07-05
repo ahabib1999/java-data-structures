@@ -12,6 +12,9 @@ public class Main {
 
         // intTree.traverseInOrder();
 
-        System.out.println(intTree.get(10).getData());
+        // System.out.println(intTree.get(10).getData());
+
+        System.out.println(intTree.getMin());
+        System.out.println(intTree.getMax());
     }
 }

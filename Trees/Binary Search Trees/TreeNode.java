@@ -66,6 +66,23 @@ public class TreeNode {
 
     }
 
+    public int getMin() {
+
+        if (leftChild == null) {
+            return this.data;
+        }
+
+        return leftChild.getMin();
+    }
+
+    public int getMax() {
+        if (rightChild == null) {
+            return this.data;
+        }
+
+        return rightChild.getMax();
+    }
+
     public int getData() {
         return data;
     }
