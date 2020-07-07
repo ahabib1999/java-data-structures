@@ -14,7 +14,12 @@ public class Main {
 
         // System.out.println(intTree.get(10).getData());
 
-        System.out.println(intTree.getMin());
-        System.out.println(intTree.getMax());
+        /*
+         * System.out.println(intTree.getMin()); System.out.println(intTree.getMax());
+         */
+
+        /*
+         * intTree.delete(35); intTree.traverseInOrder();
+         */
     }
 }
