@@ -68,6 +68,14 @@ public class Tree {
             else if (subTreeNode.getRightChild() == null) {
                 return subTreeNode.getLeftChild();
             }
+
+            subTreeNode.setData(subTreeNode.getRightChild().getMin());
+
+            int currentNodeData = subTreeNode.getData();
+            TreeNode currentNodeRightChild = subTreeNode.getRightChild();
+            TreeNode replacingNode = deleteNode(currentNodeRightChild, currentNodeData);
+
+            subTreeNode.setRightChild(replacingNode);
         }
 
         return subTreeNode;

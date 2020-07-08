@@ -9,6 +9,8 @@ public class Main {
         intTree.insertTreeNode(10);
         intTree.insertTreeNode(5);
         intTree.insertTreeNode(35);
+        intTree.insertTreeNode(12);
+        intTree.insertTreeNode(20);
 
         // intTree.traverseInOrder();
 
@@ -21,5 +23,8 @@ public class Main {
         /*
          * intTree.delete(35); intTree.traverseInOrder();
          */
+
+        intTree.delete(25);
+        intTree.traverseInOrder();
     }
 }
